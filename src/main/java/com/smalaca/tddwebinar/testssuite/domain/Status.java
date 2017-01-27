@@ -20,7 +20,7 @@ enum Status {
         }
     };
 
-    public Status moveTo(Status transition) {
+    Status moveTo(Status transition) {
         if (isSupported(transition)) {
             return transition;
         }

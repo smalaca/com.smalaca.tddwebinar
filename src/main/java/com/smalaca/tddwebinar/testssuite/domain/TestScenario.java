@@ -19,11 +19,11 @@ public class TestScenario {
         return statusToCompare.equals(status);
     }
 
-    public void done() {
+    void done() {
         moveTo(DONE);
     }
 
-    public void accept() {
+    void accept() {
         moveTo(ACCEPTED);
     }
 
