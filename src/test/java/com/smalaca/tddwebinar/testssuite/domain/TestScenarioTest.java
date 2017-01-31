@@ -5,7 +5,9 @@ import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class TestScenarioTest {
-    private final TestScenario scenario = new TestScenario();
+    private static final Author DUMMY_AUTHOR = null;
+
+    private final TestScenario scenario = new TestScenario(DUMMY_AUTHOR);
 
     @Test
     public void shouldRecognizeIfIsNotDone() {

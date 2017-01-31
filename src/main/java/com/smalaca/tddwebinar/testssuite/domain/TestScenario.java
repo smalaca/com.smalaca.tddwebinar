@@ -6,6 +6,11 @@ import static com.smalaca.tddwebinar.testssuite.domain.Status.DRAFT;
 
 public class TestScenario {
     private Status status = DRAFT;
+    private final Author author;
+
+    public TestScenario(Author author) {
+        this.author = author;
+    }
 
     public boolean isAccepted() {
         return isInStatus(ACCEPTED);
@@ -29,5 +34,9 @@ public class TestScenario {
 
     private void moveTo(Status transition) {
         status = status.moveTo(transition);
+    }
+
+    public Author author() {
+        return author;
     }
 }
